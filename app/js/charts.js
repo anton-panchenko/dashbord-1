@@ -193,3 +193,12 @@ let playerStatistics4 = new Chart(ctx6, {
     }
 });
 
+// Простое обновление диаграммы с рандомными данными
+
+let updateChart = function (chart, maxVal) {
+    for (let i = 0; i < 7; i++) {
+        chart.data.datasets[0].data[i] = Math.floor(Math.random() * Math.floor(maxVal));
+    }
+    chart.update();
+};
+

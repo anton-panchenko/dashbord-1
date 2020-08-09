@@ -4,7 +4,6 @@
 /*-----------------------*/
 /*---------APP-----------*/
 /*-----------------------*/
-body{}
 
 .app{
   display: grid;
@@ -176,8 +175,8 @@ body{}
   &_counters{
     min-height: 103px;
     background-color: #F5F5F5;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
     align-items: center;
     flex-wrap: wrap;
     padding: 0 30px;
@@ -230,7 +229,6 @@ body{}
   .sixth{
     background-color: #F06037;
   }
-
 }
 
 .dashboard_charts{
@@ -239,6 +237,7 @@ body{}
   background-color: #F1F1F1;
   &__item{
     margin: 35px;
+    max-width: 800px;
     &_title{
       font-size: 18px;
       line-height: 21px;
@@ -258,11 +257,11 @@ body{}
   &_wrap{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 28px;
   }
   &_item{
     display: flex;
     align-items: center;
+    margin: 10px;
     &__logo{
       width: 45px;
       height: 45px;
@@ -413,6 +412,7 @@ body{}
     padding: 2px 0 0 0;
     &:hover{
       background-color: #DFDFDE;
+      cursor: pointer;
     }
   }
   &_btn__right{
@@ -423,6 +423,11 @@ body{}
     padding: 2px 0 0 0;
     &:hover{
       background-color: #DFDFDE;
+      cursor: pointer;
     }
   }
 }
+
+
+
+@import "media";

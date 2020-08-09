@@ -1,0 +1,84 @@
+/*-----------------------*/
+/*---------MEDIA---------*/
+/*-----------------------*/
+
+@media(max-width: 1835px){
+  .dashboard_charts__item{
+    max-width: 700px;
+  }
+}
+@media(max-width: 1640px){
+  .dashboard_charts__item{
+    max-width: 600px;
+  }
+}
+@media(max-width: 1440px){
+  .dashboard_charts__item{
+    max-width: 550px;
+  }
+}
+@media(max-width: 1335px){
+  .dashboard_charts__item{
+    max-width: 500px;
+  }
+}
+@media(max-width: 1240px){
+  .dashboard_charts__item{
+    max-width: 450px;
+  }
+  .playerStatistics_items{
+    grid-template-columns: 1fr 1fr;
+  }
+  .recentPlayers_wrap{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media(max-width: 1140px){
+  .dashboard_charts__item{
+    max-width: 400px;
+  }
+}
+@media(max-width: 1030px){
+  .dashboard_counters{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .dashboard_charts{
+    grid-template-columns: 1fr;
+  }
+  .dashboard_charts__item{
+    max-width: 800px;
+  }
+  .playerStatistics_items{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .recentPlayers_wrap{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media(max-width: 960px){
+  .dashboard_charts__item{
+    max-width: 700px;
+  }
+  .header_control__search{
+    min-width: 200px;
+  }
+}
+@media(max-width: 860px){
+  .dashboard_charts__item{
+    max-width: 600px;
+  }
+  .header_control__search{
+    display: none;
+  }
+}
+@media(max-width: 770px){
+  .dashboard_charts__item{
+    max-width: 500px;
+  }
+  .playerStatistics_items{
+    grid-template-columns: 1fr 1fr;
+  }
+  .recentPlayers_wrap{
+    grid-template-columns: 1fr 1fr;
+  }
+}

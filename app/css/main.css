@@ -350,12 +350,10 @@ select {
 .dashboard_counters {
   min-height: 103px;
   background-color: #F5F5F5;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+  grid-template-columns: repeat(6, 1fr);
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -444,6 +442,7 @@ select {
 
 .dashboard_charts__item {
   margin: 35px;
+  max-width: 800px;
 }
 
 .dashboard_charts__item_title {
@@ -469,7 +468,6 @@ select {
   display: grid;
   -ms-grid-columns: (1fr)[3];
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 28px;
 }
 
 .recentPlayers_item {
@@ -479,6 +477,7 @@ select {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 10px;
 }
 
 .recentPlayers_item__logo {
@@ -674,6 +673,7 @@ select {
 
 .pagination_btn__left:hover {
   background-color: #DFDFDE;
+  cursor: pointer;
 }
 
 .pagination_btn__right {
@@ -686,4 +686,106 @@ select {
 
 .pagination_btn__right:hover {
   background-color: #DFDFDE;
+  cursor: pointer;
+}
+
+/*-----------------------*/
+/*---------MEDIA---------*/
+/*-----------------------*/
+@media (max-width: 1835px) {
+  .dashboard_charts__item {
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 1640px) {
+  .dashboard_charts__item {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .dashboard_charts__item {
+    max-width: 550px;
+  }
+}
+
+@media (max-width: 1335px) {
+  .dashboard_charts__item {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 1240px) {
+  .dashboard_charts__item {
+    max-width: 450px;
+  }
+  .playerStatistics_items {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+  .recentPlayers_wrap {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 1140px) {
+  .dashboard_charts__item {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 1030px) {
+  .dashboard_counters {
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .dashboard_charts {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+  .dashboard_charts__item {
+    max-width: 800px;
+  }
+  .playerStatistics_items {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .recentPlayers_wrap {
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 960px) {
+  .dashboard_charts__item {
+    max-width: 700px;
+  }
+  .header_control__search {
+    min-width: 200px;
+  }
+}
+
+@media (max-width: 860px) {
+  .dashboard_charts__item {
+    max-width: 600px;
+  }
+  .header_control__search {
+    display: none;
+  }
+}
+
+@media (max-width: 770px) {
+  .dashboard_charts__item {
+    max-width: 500px;
+  }
+  .playerStatistics_items {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+  .recentPlayers_wrap {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
 }

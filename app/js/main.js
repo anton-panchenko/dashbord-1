@@ -44,5 +44,11 @@ document.querySelectorAll('.controls_chooseBtns__btn')
             this.parentNode.previousElementSibling.firstElementChild.innerHTML = this.getAttribute('data-mode');
             this.parentNode.classList.remove('shown');
             this.parentNode.previousElementSibling.classList.add('active');
+            if (this.parentNode.getAttribute('id') === 'activePlayersChoose'){
+                updateChart(activePlayers, 60);
+            }
+            if (this.parentNode.getAttribute('id') === 'activeTournamentsChoose'){
+                updateChart(activeTournaments, 900);
+            }
         });
     });
