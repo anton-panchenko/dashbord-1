@@ -454,7 +454,14 @@ select {
 }
 
 .dashboard_charts__item_title__wrap {
-  margin: 0 0 40px 0;
+  height: 60px;
+  padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .recentPlayers_wrap {
@@ -522,7 +529,7 @@ select {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 5px 0 0 0;
+  margin: 5px 0 0 5px;
 }
 
 .playerStatistics_item__title {
@@ -545,4 +552,138 @@ select {
   display: block;
   color: #43474D;
   padding: 0 0 10px 0;
+}
+
+/*---------------------------*/
+/*---------CONTROLS----------*/
+/*---------------------------*/
+.controls {
+  position: relative;
+}
+
+.controls_singleBtn {
+  display: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70px;
+  height: 22px;
+  color: #A1A1A1;
+  border: 1px solid #E0DFDF;
+  border-radius: 3px;
+  font-size: 10px;
+  line-height: 1.2;
+  font-weight: 500;
+  letter-spacing: 0.013em;
+  background-color: #F2F2F2;
+  padding: 0 5px 0 10px;
+}
+
+.controls_singleBtn span {
+  display: block;
+}
+
+.controls_singleBtn i {
+  display: block;
+  margin: 0 0 5px 0;
+}
+
+.controls_singleBtn:hover {
+  background-color: #DFDFDE;
+}
+
+.controls_chooseBtns {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+  border: 1px solid #E0DFDF;
+  border-radius: 3px;
+  background-color: #F2F2F2;
+}
+
+.controls_chooseBtns__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70px;
+  height: 22px;
+  color: #A1A1A1;
+  font-size: 10px;
+  line-height: 1.2;
+  font-weight: 500;
+  letter-spacing: 0.013em;
+  padding: 0 5px 0 10px;
+}
+
+.controls_chooseBtns__btn i {
+  display: none;
+  margin: 3px 0 0 0;
+}
+
+.controls_chooseBtns__btn:hover {
+  background-color: #DFDFDE;
+}
+
+.controls .i-active {
+  display: block;
+}
+
+.controls .active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.controls .shown {
+  display: block;
+}
+
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 22px;
+  color: #A1A1A1;
+  font-size: 10px;
+  background-color: #F2F2F2;
+}
+
+.pagination_btn__left {
+  width: 20px;
+  text-align: center;
+  border: 1px solid #E0DFDF;
+  border-radius: 3px 0 0 3px;
+  padding: 2px 0 0 0;
+}
+
+.pagination_btn__left:hover {
+  background-color: #DFDFDE;
+}
+
+.pagination_btn__right {
+  width: 20px;
+  text-align: center;
+  border: 1px solid #E0DFDF;
+  border-radius: 0 3px 3px 0;
+  padding: 2px 0 0 0;
+}
+
+.pagination_btn__right:hover {
+  background-color: #DFDFDE;
 }

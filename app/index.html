@@ -93,7 +93,7 @@
                         <span class="dashboard_counters__item_counter">
                             267
                         </span>
-                    <span class="dashboard_counters__item_title">
+                        <span class="dashboard_counters__item_title">
                             Online Players
                         </span>
                 </a>
@@ -104,7 +104,7 @@
                         <span class="dashboard_counters__item_counter">
                             1890
                         </span>
-                    <span class="dashboard_counters__item_title">
+                        <span class="dashboard_counters__item_title">
                             Hours played
                         </span>
                 </a>
@@ -115,7 +115,7 @@
                         <span class="dashboard_counters__item_counter">
                             22
                         </span>
-                    <span class="dashboard_counters__item_title">
+                        <span class="dashboard_counters__item_title">
                             New Tournaments
                         </span>
                 </a>
@@ -126,7 +126,7 @@
                         <span class="dashboard_counters__item_counter">
                             16
                         </span>
-                    <span class="dashboard_counters__item_title">
+                        <span class="dashboard_counters__item_title">
                             Lifetime Fails
                         </span>
                 </a>
@@ -137,7 +137,7 @@
                         <span class="dashboard_counters__item_counter">
                             6544
                         </span>
-                    <span class="dashboard_counters__item_title">
+                        <span class="dashboard_counters__item_title">
                             Comments
                         </span>
                 </a>
@@ -148,7 +148,7 @@
                         <span class="dashboard_counters__item_counter">
                             568
                         </span>
-                    <span class="dashboard_counters__item_title">
+                        <span class="dashboard_counters__item_title">
                             Games Played
                         </span>
                 </a>
@@ -158,24 +158,66 @@
             <div class="dashboard_charts__item">
                 <div class="dashboard_charts__item_title__wrap">
                     <h3 class="dashboard_charts__item_title">
-                        Recent Players
+                        Active Players
                     </h3>
+                    <div class="controls">
+                        <a href="#" class="controls_singleBtn active">
+                            <span class="controls_singleBtn__text">Daily</span>
+                            <i class="fas fa-sort-down"></i>
+                        </a>
+                        <div class="controls_chooseBtns">
+                            <a href="#" class="controls_chooseBtns__btn" data-mode="Daily">
+                                Daily<i class="fas fa-sort-up"></i>
+                            </a>
+                            <a href="#" class="controls_chooseBtns__btn" data-mode="Monthly">
+                                Monthly<i class="fas fa-sort-up"></i>
+                            </a>
+                            <a href="#" class="controls_chooseBtns__btn" data-mode="Yearly">
+                                Yearly<i class="fas fa-sort-up"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <canvas id="activePlayers_chart"></canvas>
+                <div><canvas id="activePlayers_chart"></canvas></div>
             </div><!--end activePlayers-->
             <div class="dashboard_charts__item">
                 <div class="dashboard_charts__item_title__wrap">
                     <h3 class="dashboard_charts__item_title">
                         Active Tournaments
                     </h3>
+                    <div class="controls">
+                        <a href="#" class="controls_singleBtn active">
+                            <span class="controls_singleBtn__text">Monthly</span>
+                            <i class="fas fa-sort-down"></i>
+                        </a>
+                        <div class="controls_chooseBtns">
+                            <a href="#" class="controls_chooseBtns__btn" data-mode="Daily">
+                                Daily<i class="fas fa-sort-up"></i>
+                            </a>
+                            <a href="#" class="controls_chooseBtns__btn" data-mode="Monthly">
+                                Monthly<i class="fas fa-sort-up"></i>
+                            </a>
+                            <a href="#" class="controls_chooseBtns__btn" data-mode="Yearly">
+                                Yearly<i class="fas fa-sort-up"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <canvas id="activeTournaments_chart"></canvas>
+                <div><canvas id="activeTournaments_chart"></canvas></div>
             </div><!--end activeTournaments-->
             <div class="dashboard_charts__item">
                 <div class="dashboard_charts__item_title__wrap">
                     <h3 class="dashboard_charts__item_title">
                         Recent Players
                     </h3>
+                    <div class="pagination">
+                        <div class="pagination_btn__left">
+                            <i class="fas fa-caret-left"></i>
+                        </div>
+                        <div class="pagination_btn__right">
+                            <i class="fas fa-caret-right"></i>
+                        </div>
+                    </div>
                 </div>
                 <div class="recentPlayers_wrap">
                     <a href="#" class="recentPlayers_item">
@@ -302,6 +344,14 @@
                     <h3 class="dashboard_charts__item_title">
                         Player Statistics
                     </h3>
+                    <div class="pagination">
+                        <div class="pagination_btn__left">
+                            <i class="fas fa-caret-left"></i>
+                        </div>
+                        <div class="pagination_btn__right">
+                            <i class="fas fa-caret-right"></i>
+                        </div>
+                    </div>
                 </div>
                 <div class="playerStatistics_items">
                     <div class="playerStatistics_item">
