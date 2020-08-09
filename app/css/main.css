@@ -1,0 +1,548 @@
+/*-------------------------*/
+/*---------RESET-----------*/
+/*-------------------------*/
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul,
+ol {
+  padding: 0;
+}
+
+body,
+div,
+span,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+  font: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+article > * + * {
+  margin-top: 1em;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+:active, :hover, :focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+/*-------------------------*/
+/*---------FONTS-----------*/
+/*-------------------------*/
+@font-face {
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Avenir"), url("../fonts/Avenir LT Std/AvenirLTStd-Book.otf") format("otf");
+}
+
+@font-face {
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: 500;
+  src: local("Avenir"), url("../fonts/Avenir LT Std/AvenirLTStd-Medium.otf") format("otf");
+}
+
+@font-face {
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Avenir"), url("../fonts/Avenir LT Std/AvenirLTStd-Light.otf") format("otf");
+}
+
+@font-face {
+  font-family: 'Avenir Roman';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Avenir Roman"), url("../fonts/Avenir LT Std/AvenirLTStd-Roman.otf") format("otf");
+}
+
+/*-----------------------*/
+/*---------APP-----------*/
+/*-----------------------*/
+.app {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 80px 1fr;
+  grid-template-columns: 80px 1fr;
+  -ms-grid-rows: 67px 1fr;
+  grid-template-rows: 67px 1fr;
+  font-family: Avenir, sans-serif;
+}
+
+/*---------------------------*/
+/*----------SIDEBAR----------*/
+/*---------------------------*/
+.sidebar_logo {
+  background-color: #343639;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sidebar_logo img {
+  width: 30px;
+}
+
+.sidebar_nav {
+  background-color: #94C571;
+}
+
+.sidebar_nav__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 25px;
+  position: relative;
+}
+
+.sidebar_nav__item::before {
+  content: '';
+  position: absolute;
+  right: 0px;
+  bottom: 9px;
+  border: 7px solid transparent;
+  border-right: 10px solid #94C571;
+}
+
+.sidebar_nav__item.active::before {
+  border-right: 7px solid #F5F5F5;
+}
+
+.sidebar_nav__item i {
+  font-size: 20px;
+  color: #3F5F3B;
+  opacity: 0.6;
+}
+
+.sidebar_nav__item:hover.sidebar_nav__item i {
+  opacity: 1;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+/*---------------------------*/
+/*----------HEADER-----------*/
+/*---------------------------*/
+.header {
+  height: 67px;
+  width: 100%;
+  background-color: #434648;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header_links a {
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 35px;
+  color: #909BA6;
+}
+
+.header_links a:hover {
+  color: #CED4DB;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.header_control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header_control__search {
+  min-width: 288px;
+  height: 38px;
+  border-radius: 4px;
+  background-color: #54595E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 10px 0 0;
+}
+
+.header_control__search i {
+  display: block;
+  color: #727A82;
+  font-size: 20px;
+  margin: 0 10px;
+}
+
+.header_control__search input {
+  background-color: transparent;
+  border: none;
+  color: #727A82;
+  width: 100%;
+  margin: 10px 10px 10px 0;
+}
+
+.header_control__userAccess {
+  min-width: 195px;
+  height: 67px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #434648;
+  padding: 0 5px;
+}
+
+.header_control__userAccess:hover {
+  cursor: pointer;
+  background-color: #343639;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.header_userAccess__avatar {
+  width: 31px;
+  height: 31px;
+  position: relative;
+}
+
+.header_userAccess__avatar_msgCounter {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: #F06037;
+  border-radius: 50%;
+  width: 19px;
+  height: 19px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header_userAccess__avatar_msgCounter p {
+  color: #FDF8F7;
+  font-size: 10px;
+}
+
+.header_userAccess__name {
+  color: #909BA6;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.header_userAccess__arrow i {
+  color: #727A82;
+  padding: 0 0 10px 0;
+}
+
+/*---------------------------*/
+/*--------DASHBOARD----------*/
+/*---------------------------*/
+.dashboard_title {
+  background-color: #FEFEFE;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 71px;
+  margin-left: 40px;
+}
+
+.dashboard_title h1 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #626D76;
+}
+
+.dashboard_title i {
+  color: #C7CCD0;
+  font-size: 13px;
+  margin-left: 10px;
+}
+
+.dashboard_counters {
+  min-height: 103px;
+  background-color: #F5F5F5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0 30px;
+}
+
+.dashboard_counters__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 180px;
+      -ms-flex: 180px;
+          flex: 180px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  margin: 20px 0;
+}
+
+.dashboard_counters__item_vline {
+  width: 3px;
+  height: 56px;
+  margin: 0 0 5px 0;
+}
+
+.dashboard_counters__item_link {
+  margin: 0 0 0 18px;
+}
+
+.dashboard_counters__item_counter {
+  display: block;
+  font-size: 35px;
+  font-weight: 400;
+  color: #646A71;
+  line-height: 22px;
+  margin: 0 0 10px 0;
+}
+
+.dashboard_counters__item_title {
+  display: block;
+  font-size: 14px;
+  color: #A7AEB6;
+}
+
+.dashboard .first {
+  background-color: #94C571;
+}
+
+.dashboard .second {
+  background-color: #3A8282;
+}
+
+.dashboard .third {
+  background-color: #94C571;
+}
+
+.dashboard .fourth {
+  background-color: #F06037;
+}
+
+.dashboard .fifth {
+  background-color: #94C571;
+}
+
+.dashboard .sixth {
+  background-color: #F06037;
+}
+
+.dashboard_charts {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  background-color: #F1F1F1;
+}
+
+.dashboard_charts__item {
+  margin: 35px;
+}
+
+.dashboard_charts__item_title {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #727A82;
+}
+
+.dashboard_charts__item_title__wrap {
+  margin: 0 0 40px 0;
+}
+
+.recentPlayers_wrap {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 28px;
+}
+
+.recentPlayers_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.recentPlayers_item__logo {
+  width: 45px;
+  height: 45px;
+  margin: 0 13px 0 0;
+}
+
+.recentPlayers_item__name {
+  display: block;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 300;
+  color: #727A82;
+}
+
+.recentPlayers_item__location {
+  display: block;
+  font-size: 12px;
+  line-height: 21px;
+  font-weight: 300;
+  color: #A8ACB0;
+}
+
+.playerStatistics_items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.playerStatistics_item__chart {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 20px 0;
+}
+
+.playerStatistics_item__chart_counter {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5px 0 0 0;
+}
+
+.playerStatistics_item__title {
+  text-align: center;
+  font-size: 18px;
+  line-height: 42px;
+  font-weight: 400;
+  color: #727A82;
+}
+
+.playerStatistics_counter__number {
+  display: block;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: #43474D;
+}
+
+.playerStatistics_counter__percent {
+  display: block;
+  color: #43474D;
+  padding: 0 0 10px 0;
+}

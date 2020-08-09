@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="libs/fontawesom/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Dashboard</title>
+</head>
+<body>
+
+<div class="app">
+    <div class="sidebar_logo">
+        <a href="#">
+            <img src="img/dest/emblem.png" alt="">
+        </a>
+    </div><!--end sidebar_logo-->
+    <div class="header">
+        <div class="header_links">
+            <a href="#">+ Add User</a>
+            <a href="#">User Preferences</a>
+            <a href="#">Settings</a>
+        </div>
+        <div class="header_control">
+            <div class="header_control__search">
+                <i class="fas fa-search"></i>
+                <input type="text">
+            </div>
+            <div class="header_control__userAccess">
+                <div class="header_userAccess__avatar">
+                    <img src="img/dest/base_504.png" alt="">
+                    <div class="header_userAccess__avatar_msgCounter">
+                        <p>2</p>
+                    </div>
+                </div>
+                <div class="header_userAccess__name">
+                    <p>Aaron Sananes</p>
+                </div>
+                <div class="header_userAccess__arrow">
+                    <i class="fas fa-sort-down"></i>
+                </div>
+            </div>
+        </div>
+    </div><!--end header-->
+    <div class="sidebar_nav">
+        <div class="sidebar_nav__item active" data-title="Dashboard">
+            <a href="#">
+                <i class="fas fa-tachometer-alt"></i>
+            </a>
+        </div>
+        <div class="sidebar_nav__item" data-title="Users">
+            <a href="#">
+                <i class="far fa-user"></i>
+            </a>
+        </div>
+        <div class="sidebar_nav__item" data-title="Create new">
+            <a href="#">
+                <i class="fas fa-pencil-alt"></i>
+            </a>
+        </div>
+        <div class="sidebar_nav__item" data-title="Calendar">
+            <a href="#">
+                <i class="far fa-calendar-alt"></i>
+            </a>
+        </div>
+        <div class="sidebar_nav__item" data-title="Documents">
+            <a href="#">
+                <i class="far fa-file-alt"></i>
+            </a>
+        </div>
+        <div class="sidebar_nav__item" data-title="Messages">
+            <a href="#">
+                <i class="far fa-comments"></i>
+            </a>
+        </div>
+        <div class="sidebar_nav__item" data-title="Statistic">
+            <a href="#">
+                <i class="far fa-chart-bar"></i>
+            </a>
+        </div>
+    </div><!--end sidebar_nav-->
+    <div class="dashboard">
+        <div class="dashboard_title">
+            <h1>Dashboard</h1>
+            <i class="fas fa-sun"></i>
+        </div>
+        <div class="dashboard_counters">
+            <div class="dashboard_counters__item">
+                <div class="dashboard_counters__item_vline first"></div>
+                <a href="#" class="dashboard_counters__item_link">
+                        <span class="dashboard_counters__item_counter">
+                            267
+                        </span>
+                    <span class="dashboard_counters__item_title">
+                            Online Players
+                        </span>
+                </a>
+            </div>
+            <div class="dashboard_counters__item">
+                <div class="dashboard_counters__item_vline second"></div>
+                <a href="#" class="dashboard_counters__item_link">
+                        <span class="dashboard_counters__item_counter">
+                            1890
+                        </span>
+                    <span class="dashboard_counters__item_title">
+                            Hours played
+                        </span>
+                </a>
+            </div>
+            <div class="dashboard_counters__item">
+                <div class="dashboard_counters__item_vline third"></div>
+                <a href="#" class="dashboard_counters__item_link">
+                        <span class="dashboard_counters__item_counter">
+                            22
+                        </span>
+                    <span class="dashboard_counters__item_title">
+                            New Tournaments
+                        </span>
+                </a>
+            </div>
+            <div class="dashboard_counters__item">
+                <div class="dashboard_counters__item_vline fourth"></div>
+                <a href="#" class="dashboard_counters__item_link">
+                        <span class="dashboard_counters__item_counter">
+                            16
+                        </span>
+                    <span class="dashboard_counters__item_title">
+                            Lifetime Fails
+                        </span>
+                </a>
+            </div>
+            <div class="dashboard_counters__item">
+                <div class="dashboard_counters__item_vline fifth"></div>
+                <a href="#" class="dashboard_counters__item_link">
+                        <span class="dashboard_counters__item_counter">
+                            6544
+                        </span>
+                    <span class="dashboard_counters__item_title">
+                            Comments
+                        </span>
+                </a>
+            </div>
+            <div class="dashboard_counters__item">
+                <div class="dashboard_counters__item_vline sixth"></div>
+                <a href="#" class="dashboard_counters__item_link">
+                        <span class="dashboard_counters__item_counter">
+                            568
+                        </span>
+                    <span class="dashboard_counters__item_title">
+                            Games Played
+                        </span>
+                </a>
+            </div><!--end counters items-->
+        </div><!--end counters-->
+        <div class="dashboard_charts">
+            <div class="dashboard_charts__item">
+                <div class="dashboard_charts__item_title__wrap">
+                    <h3 class="dashboard_charts__item_title">
+                        Recent Players
+                    </h3>
+                </div>
+                <canvas id="activePlayers_chart"></canvas>
+            </div><!--end activePlayers-->
+            <div class="dashboard_charts__item">
+                <div class="dashboard_charts__item_title__wrap">
+                    <h3 class="dashboard_charts__item_title">
+                        Active Tournaments
+                    </h3>
+                </div>
+                <canvas id="activeTournaments_chart"></canvas>
+            </div><!--end activeTournaments-->
+            <div class="dashboard_charts__item">
+                <div class="dashboard_charts__item_title__wrap">
+                    <h3 class="dashboard_charts__item_title">
+                        Recent Players
+                    </h3>
+                </div>
+                <div class="recentPlayers_wrap">
+                    <a href="#" class="recentPlayers_item">
+                        <div class="recentPlayers_item__logo">
+                            <img src="img/dest/base_12.png" alt="">
+                        </div>
+                        <div class="recentPlayers_item__info">
+                                <span class="recentPlayers_item__name">
+                                    Daryl Ginn
+                                </span>
+                                <span class="recentPlayers_item__location">
+                                    United Kingdom
+                                </span>
+                        </div>
+                    </a>
+                    <a href="#" class="recentPlayers_item">
+                        <div class="recentPlayers_item__logo">
+                            <img src="img/dest/base_22.png" alt="">
+                        </div>
+                        <div class="recentPlayers_item__info">
+                                <span class="recentPlayers_item__name">
+                                    John Mac
+                                </span>
+                                <span class="recentPlayers_item__location">
+                                    United States
+                                </span>
+                        </div>
+                    </a>
+                    <a href="#" class="recentPlayers_item">
+                        <div class="recentPlayers_item__logo">
+                            <img src="img/dest/base_32.png" alt="">
+                        </div>
+                        <div class="recentPlayers_item__info">
+                                <span class="recentPlayers_item__name">
+                                    Aaron Sananes
+                                </span>
+                                <span class="recentPlayers_item__location">
+                                    United Kingdom
+                                </span>
+                        </div>
+                    </a>
+                    <a href="#" class="recentPlayers_item">
+                        <div class="recentPlayers_item__logo">
+                            <img src="img/dest/base_42.png" alt="">
+                        </div>
+                        <div class="recentPlayers_item__info">
+                                <span class="recentPlayers_item__name">
+                                    Erik Henebratt
+                                </span>
+                                <span class="recentPlayers_item__location">
+                                    Sweden
+                                </span>
+                        </div>
+                    </a>
+                    <a href="#" class="recentPlayers_item">
+                        <div class="recentPlayers_item__logo">
+                            <img src="img/dest/base_52.png" alt="">
+                        </div>
+                        <div class="recentPlayers_item__info">
+                                <span class="recentPlayers_item__name">
+                                    Lindsay Scott
+                                </span>
+                                <span class="recentPlayers_item__location">
+                                    South Africa
+                                </span>
+                        </div>
+                    </a>
+                    <a href="#" class="recentPlayers_item">
+                        <div class="recentPlayers_item__logo">
+                            <img src="img/dest/base_62.png" alt="">
+                        </div>
+                        <div class="recentPlayers_item__info">
+                                <span class="recentPlayers_item__name">
+                                    Jimmy Mars
+                                </span>
+                                <span class="recentPlayers_item__location">
+                                    Australia
+                                </span>
+                        </div>
+                    </a>
+                    <a href="#" class="recentPlayers_item">
+                        <div class="recentPlayers_item__logo">
+                            <img src="img/dest/base_72.png" alt="">
+                        </div>
+                        <div class="recentPlayers_item__info">
+                                <span class="recentPlayers_item__name">
+                                    Daryl Ginn
+                                </span>
+                                <span class="recentPlayers_item__location">
+                                    United Kingdom
+                                </span>
+                        </div>
+                    </a>
+                    <a href="#" class="recentPlayers_item">
+                        <div class="recentPlayers_item__logo">
+                            <img src="img/dest/base_82.png" alt="">
+                        </div>
+                        <div class="recentPlayers_item__info">
+                                <span class="recentPlayers_item__name">
+                                    John Mac
+                                </span>
+                                <span class="recentPlayers_item__location">
+                                    United Kingdom
+                                </span>
+                        </div>
+                    </a>
+                    <a href="#" class="recentPlayers_item">
+                        <div class="recentPlayers_item__logo">
+                            <img src="img/dest/base_92.png" alt="">
+                        </div>
+                        <div class="recentPlayers_item__info">
+                                <span class="recentPlayers_item__name">
+                                    Aaron Sananes
+                                </span>
+                                <span class="recentPlayers_item__location">
+                                    United Kingdom
+                                </span>
+                        </div>
+                    </a>
+                </div>
+            </div><!--end recentPlayers-->
+            <div class="dashboard_charts__item">
+                <div class="dashboard_charts__item_title__wrap">
+                    <h3 class="dashboard_charts__item_title">
+                        Player Statistics
+                    </h3>
+                </div>
+                <div class="playerStatistics_items">
+                    <div class="playerStatistics_item">
+                        <div class="playerStatistics_item__chart">
+                            <div class="playerStatistics_item__chart_chart">
+                                <canvas id="playerStatistics_item__chart1" width="110px" height="110px"></canvas>
+                            </div>
+                            <div class="playerStatistics_item__chart_counter">
+                                <span class="playerStatistics_counter__number">58</span>
+                                <span class="playerStatistics_counter__percent">%</span>
+                            </div>
+                        </div>
+                        <p class="playerStatistics_item__title">
+                            New Players
+                        </p>
+                    </div>
+                    <div class="playerStatistics_item">
+                        <div class="playerStatistics_item__chart">
+                            <div class="playerStatistics_item__chart_chart">
+                                <canvas id="playerStatistics_item__chart2" width="110px" height="110px"></canvas>
+                            </div>
+                            <div class="playerStatistics_item__chart_counter">
+                                <span class="playerStatistics_counter__number">75</span>
+                                <span class="playerStatistics_counter__percent">%</span>
+                            </div>
+                        </div>
+                        <p class="playerStatistics_item__title">
+                            Revisited
+                        </p>
+                    </div>
+                    <div class="playerStatistics_item">
+                        <div class="playerStatistics_item__chart">
+                            <div class="playerStatistics_item__chart_chart">
+                                <canvas id="playerStatistics_item__chart3" width="110px" height="110px"></canvas>
+                            </div>
+                            <div class="playerStatistics_item__chart_counter">
+                                <span class="playerStatistics_counter__number">28</span>
+                                <span class="playerStatistics_counter__percent">%</span>
+                            </div>
+                        </div>
+                        <p class="playerStatistics_item__title">
+                            Commented
+                        </p>
+                    </div>
+                    <div class="playerStatistics_item">
+                        <div class="playerStatistics_item__chart">
+                            <div class="playerStatistics_item__chart_chart">
+                                <canvas id="playerStatistics_item__chart4" width="110px" height="110px"></canvas>
+                            </div>
+                            <div class="playerStatistics_item__chart_counter">
+                                <span class="playerStatistics_counter__number">97</span>
+                                <span class="playerStatistics_counter__percent">%</span>
+                            </div>
+                        </div>
+                        <p class="playerStatistics_item__title">
+                            Active Players
+                        </p>
+                    </div>
+                </div>
+            </div><!--end playerStatistics-->
+        </div><!--end dashboard_charts-->
+    </div><!--end dashboard-->
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+<script src="js/charts.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
