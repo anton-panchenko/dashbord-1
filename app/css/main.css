@@ -171,7 +171,7 @@ select {
 }
 
 .sidebar_nav__item i {
-  font-size: 20px;
+  font-size: calc(14px + 0.41208791208791207vw);
   color: #3F5F3B;
   opacity: 0.6;
 }
@@ -204,7 +204,7 @@ select {
 .header_links a {
   font-size: 14px;
   font-weight: 400;
-  margin-left: 35px;
+  margin-left: calc(17.5px + 1.2019230769230769vw);
   color: #909BA6;
 }
 
@@ -225,8 +225,8 @@ select {
 }
 
 .header_control__search {
-  min-width: 288px;
-  height: 38px;
+  min-width: calc(144px + 9.89010989010989vw);
+  height: calc(19.5px + 1.3392857142857142vw);
   border-radius: 4px;
   background-color: #54595E;
   display: -webkit-box;
@@ -244,7 +244,7 @@ select {
 .header_control__search i {
   display: block;
   color: #727A82;
-  font-size: 20px;
+  font-size: calc(14px + 0.41208791208791207vw);
   margin: 0 10px;
 }
 
@@ -257,8 +257,8 @@ select {
 }
 
 .header_control__userAccess {
-  min-width: 195px;
-  height: 67px;
+  min-width: calc(97.5px + 6.696428571428571vw);
+  height: calc(33.5px + 2.3008241758241756vw);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -291,8 +291,8 @@ select {
   right: -5px;
   background-color: #F06037;
   border-radius: 50%;
-  width: 19px;
-  height: 19px;
+  width: calc(9.5px + 0.6524725274725275vw);
+  height: calc(9.5px + 0.6524725274725275vw);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -331,12 +331,12 @@ select {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 71px;
-  margin-left: 40px;
+  height: calc(35.5px + 2.4381868131868134vw);
+  margin-left: calc(20px + 1.3736263736263736vw);
 }
 
 .dashboard_title h1 {
-  font-size: 18px;
+  font-size: calc(14px + 0.27472527472527475vw);
   font-weight: 400;
   color: #626D76;
 }
@@ -348,7 +348,7 @@ select {
 }
 
 .dashboard_counters {
-  min-height: 103px;
+  min-height: calc(51.5px + 3.537087912087912vw);
   background-color: #F5F5F5;
   display: -ms-grid;
   display: grid;
@@ -359,7 +359,7 @@ select {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 0 30px;
+  padding: 0 calc(15px + 1.0302197802197801vw);
 }
 
 .dashboard_counters__item {
@@ -372,33 +372,33 @@ select {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-flex: 180px;
-      -ms-flex: 180px;
-          flex: 180px;
+  -webkit-box-flex: calc(90px + 6.181318681318682vw);
+      -ms-flex: calc(90px + 6.181318681318682vw);
+          flex: calc(90px + 6.181318681318682vw);
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   -ms-flex-negative: 1;
       flex-shrink: 1;
-  margin: 20px 0;
+  margin: calc(10px + 0.6868131868131868vw) 0;
 }
 
 .dashboard_counters__item_vline {
   width: 3px;
-  height: 56px;
+  height: calc(28px + 1.9230769230769231vw);
   margin: 0 0 5px 0;
 }
 
 .dashboard_counters__item_link {
-  margin: 0 0 0 18px;
+  margin: 0 0 0 calc(9px + 0.6181318681318682vw);
 }
 
 .dashboard_counters__item_counter {
   display: block;
-  font-size: 35px;
+  font-size: calc(14px + 1.4423076923076923vw);
   font-weight: 400;
   color: #646A71;
-  line-height: 22px;
+  line-height: calc(11px + 0.7554945054945055vw);
   margin: 0 0 10px 0;
 }
 
@@ -441,20 +441,20 @@ select {
 }
 
 .dashboard_charts__item {
-  margin: 35px;
-  max-width: 800px;
+  margin: calc(17.5px + 1.2019230769230769vw);
+  max-width: calc(400px + 27.47252747252747vw);
 }
 
 .dashboard_charts__item_title {
-  font-size: 18px;
-  line-height: 21px;
+  font-size: calc(14px + 0.27472527472527475vw);
+  line-height: calc(10.5px + 0.7211538461538461vw);
   font-weight: 400;
   color: #727A82;
 }
 
 .dashboard_charts__item_title__wrap {
-  height: 60px;
-  padding: 0 20px;
+  height: calc(30px + 2.0604395604395602vw);
+  padding: 0 calc(10px + 0.6868131868131868vw);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -481,15 +481,15 @@ select {
 }
 
 .recentPlayers_item__logo {
-  width: 45px;
-  height: 45px;
-  margin: 0 13px 0 0;
+  width: calc(22.5px + 1.5453296703296704vw);
+  height: calc(22.5px + 1.5453296703296704vw);
+  margin: 0 calc(6.5px + 0.44642857142857145vw) 0 0;
 }
 
 .recentPlayers_item__name {
   display: block;
   font-size: 14px;
-  line-height: 21px;
+  line-height: calc(10.5px + 0.7211538461538461vw);
   font-weight: 300;
   color: #727A82;
 }
@@ -497,7 +497,7 @@ select {
 .recentPlayers_item__location {
   display: block;
   font-size: 12px;
-  line-height: 21px;
+  line-height: calc(10.5px + 0.7211538461538461vw);
   font-weight: 300;
   color: #A8ACB0;
 }
@@ -520,7 +520,7 @@ select {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 0 20px 0;
+  margin: 0 0 calc(10px + 0.6868131868131868vw) 0;
 }
 
 .playerStatistics_item__chart_counter {
@@ -533,15 +533,15 @@ select {
 
 .playerStatistics_item__title {
   text-align: center;
-  font-size: 18px;
-  line-height: 42px;
+  font-size: calc(14px + 0.27472527472527475vw);
+  line-height: calc(21px + 1.4423076923076923vw);
   font-weight: 400;
   color: #727A82;
 }
 
 .playerStatistics_counter__number {
   display: block;
-  font-size: 30px;
+  font-size: calc(14px + 1.098901098901099vw);
   line-height: 1.2;
   font-weight: 500;
   color: #43474D;
@@ -568,8 +568,8 @@ select {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 70px;
-  height: 22px;
+  width: calc(35px + 2.4038461538461537vw);
+  height: calc(11px + 0.7554945054945055vw);
   color: #A1A1A1;
   border: 1px solid #E0DFDF;
   border-radius: 3px;
@@ -614,8 +614,8 @@ select {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 70px;
-  height: 22px;
+  width: calc(35px + 2.4038461538461537vw);
+  height: calc(11px + 0.7554945054945055vw);
   color: #A1A1A1;
   font-size: 10px;
   line-height: 1.2;
@@ -657,14 +657,14 @@ select {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 22px;
+  height: calc(11px + 0.7554945054945055vw);
   color: #A1A1A1;
   font-size: 10px;
   background-color: #F2F2F2;
 }
 
 .pagination_btn__left {
-  width: 20px;
+  width: calc(10px + 0.6868131868131868vw);
   text-align: center;
   border: 1px solid #E0DFDF;
   border-radius: 3px 0 0 3px;
@@ -677,7 +677,7 @@ select {
 }
 
 .pagination_btn__right {
-  width: 20px;
+  width: calc(10px + 0.6868131868131868vw);
   text-align: center;
   border: 1px solid #E0DFDF;
   border-radius: 0 3px 3px 0;
